@@ -1,7 +1,7 @@
 title: "Ahab's Harpoon"
 description: "Tools, setups & lessons from the market."
 url: "" # z.B. https://username.github.io
-baseurl: "" # z.B. /ahabsharpoon falls Projekt-Seite
+baseurl: "/ahabsharpoon" # z.B. /ahabsharpoon falls Projekt-Seite
 
 author:
   name: "Marcus Petermann"
