@@ -21,4 +21,4 @@ Diese Website bindet den **Tradays Economic Calendar** ein, einen Dienst der Met
 
 Sie haben das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16 DSGVO), Löschung (Art. 17 DSGVO), Einschränkung der Verarbeitung (Art. 18 DSGVO), Datenübertragbarkeit (Art. 20 DSGVO) und Widerspruch gegen die Verarbeitung (Art. 21 DSGVO). Bei Beschwerden können Sie sich an die zuständige Datenschutzaufsichtsbehörde wenden.
 
-</div>
+
