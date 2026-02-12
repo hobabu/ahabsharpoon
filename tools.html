@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Tools"
+---
+
+<div class="section-header">
+  <h1 class="page-title">Tools</h1>
+  <p class="page-description">Software, Skripte und Hilfsmittel für den Handel.</p>
+</div>
+
+<ul class="post-list">
+  {% for tool in site.tools reversed %}
+  <li class="post-list-item">
+    <a href="{{ tool.url | relative_url }}">
+      <span class="post-list-date">{{ tool.date | date: "%d.%m.%Y" }}</span>
+      <h2 class="post-list-title">{{ tool.title }}</h2>
+      {% if tool.excerpt %}
+        <p class="post-list-excerpt">{{ tool.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

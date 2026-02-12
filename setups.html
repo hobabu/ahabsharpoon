@@ -1,0 +1,23 @@
+---
+layout: default
+title: "Setups"
+---
+
+<div class="section-header">
+  <h1 class="page-title">Setups</h1>
+  <p class="page-description">Dokumentierte Trading-Setups und deren Ergebnisse.</p>
+</div>
+
+<ul class="post-list">
+  {% for setup in site.setups reversed %}
+  <li class="post-list-item">
+    <a href="{{ setup.url | relative_url }}">
+      <span class="post-list-date">{{ setup.date | date: "%d.%m.%Y" }}</span>
+      <h2 class="post-list-title">{{ setup.title }}</h2>
+      {% if setup.excerpt %}
+        <p class="post-list-excerpt">{{ setup.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

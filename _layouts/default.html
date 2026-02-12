@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncatewords: 50 }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="{{ '/' | relative_url }}" class="site-logo">
+          <span class="logo-icon">⚓</span>
+          <div class="logo-text">
+            <span class="logo-title">Ahab's Harpoon</span>
+            <span class="logo-tagline">{{ site.description }}</span>
+          </div>
+        </a>
+        <nav class="site-nav">
+          <a href="{{ '/' | relative_url }}">Log</a>
+          <a href="{{ '/calendar' | relative_url }}">Kalender</a>
+          <a href="{{ '/setups' | relative_url }}">Setups</a>
+          <a href="{{ '/tools' | relative_url }}">Tools</a>
+          <a href="{{ '/about' | relative_url }}">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      {{ content }}
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-quote">"Towards thee I roll, thou all-destroying but unconquering whale…"</p>
+        <p class="footer-meta">{{ site.title }} &middot; {{ site.time | date: '%Y' }}</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

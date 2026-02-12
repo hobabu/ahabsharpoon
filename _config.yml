@@ -1,0 +1,47 @@
+title: "Ahab's Harpoon"
+description: "Tools, setups & lessons from the market."
+url: "" # z.B. https://username.github.io
+baseurl: "" # z.B. /ahabsharpoon falls Projekt-Seite
+
+author:
+  name: "Marcus Petermann"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Collections für verschiedene Kategorien
+collections:
+  setups:
+    output: true
+    permalink: /setups/:title/
+  tools:
+    output: true
+    permalink: /tools/:title/
+
+# Pagination
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+paginate: 10
+paginate_path: "/page:num/"
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "setups"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: "post"
