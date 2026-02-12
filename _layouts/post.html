@@ -5,29 +5,18 @@ layout: default
   <header class="post-header">
     <div class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d.%m.%Y" }}</time>
-      {% if page.categories.size > 0 %}
-        <span class="post-categories">
-          {% for cat in page.categories %}
-            <span class="tag">{{ cat }}</span>
-          {% endfor %}
-        </span>
-      {% endif %}
       {% if page.tags.size > 0 %}
-        <span class="post-tags">
-          {% for tag in page.tags %}
-            <span class="tag tag--subtle">{{ tag }}</span>
-          {% endfor %}
-        </span>
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
       {% endif %}
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
   </header>
-
   <div class="post-content">
     {{ content }}
   </div>
-
   <footer class="post-footer">
-    <a href="{{ '/' | relative_url }}" class="back-link">&larr; Zurück zum Log</a>
+    <a href="{{ '/' | relative_url }}" class="back-link">&larr; Log</a>
   </footer>
 </article>

@@ -3,10 +3,7 @@ layout: default
 title: "Home"
 ---
 
-<div class="section-header">
-  <h1 class="page-title">Trading Log</h1>
-  <p class="page-description">Setups, Routinen, Tests und Werkzeuge.</p>
-</div>
+<h1 class="page-title">Log</h1>
 
 <ul class="post-list">
   {% for post in site.posts %}
@@ -14,9 +11,6 @@ title: "Home"
     <a href="{{ post.url | relative_url }}">
       <span class="post-list-date">{{ post.date | date: "%d.%m.%Y" }}</span>
       <h2 class="post-list-title">{{ post.title }}</h2>
-      {% if post.excerpt %}
-        <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-      {% endif %}
     </a>
   </li>
   {% endfor %}
