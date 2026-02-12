@@ -93,13 +93,15 @@ a:hover { color: var(--accent-light); }
 }
 
 .site-logo {
-  font-family: var(--mono);
-  font-weight: 600;
-  font-size: 1rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: -0.01em;
 }
+
 .site-logo:hover { color: var(--accent); }
 
 .site-nav {
@@ -108,18 +110,19 @@ a:hover { color: var(--accent-light); }
 }
 
 .site-nav a {
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--text-2);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 0.2rem 0;
-  border-bottom: 1.5px solid transparent;
-  transition: all 0.15s;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #2471a3;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  text-decoration: none;
+  border-bottom: none;
+  transition: color 0.15s;
 }
+
 .site-nav a:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: #1a5276;
 }
 
 .header-date {
