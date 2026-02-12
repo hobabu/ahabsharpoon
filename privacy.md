@@ -3,9 +3,7 @@ layout: default
 title: "Datenschutz"
 ---
 
-<h1 class="page-title">Datenschutz</h1>
-
-<div class="post-content">
+# Datenschutz
 
 Diese Website ist nicht-kommerziell und dient ausschließlich privaten Zwecken. Es werden keine Cookies gesetzt, kein Tracking eingesetzt und keine personenbezogenen Daten durch den Betreiber erhoben.
 
