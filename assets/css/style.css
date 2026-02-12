@@ -362,19 +362,14 @@ a:hover { color: var(--accent-light); }
   align-items: center;
 }
 
-.footer-quote {
-  font-style: italic;
-  color: var(--text-3);
-  font-size: 0.78rem;
-}
 
-.footer-meta {
+.footer-link {
   font-family: var(--mono);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: var(--text-3);
   letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
+.footer-link:hover { color: var(--accent); }
 
 /* ---- Responsive ---- */
 @media (max-width: 700px) {
