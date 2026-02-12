@@ -315,7 +315,7 @@ a:hover { color: var(--accent-light); }
 .calendar-wrapper {
   position: relative;
   width: 100%;
-  hight: 1200px; /* 2.5x height ratio */
+  hight: 100% ; /* 2.5x height ratio */
   border: 1px solid var(--border);
   border-radius: 2px;
   overflow: hidden;
